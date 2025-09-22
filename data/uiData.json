@@ -1,0 +1,31 @@
+{
+  "header": {
+    "title": "FarmFresh",
+    "des": "Local Farmer Booking"
+  },
+  "navBar": {
+    "default": [
+      { "name": "Home", "href": "/" },
+      { "name": "Products", "href": "/products" },
+      { "name": "Farmers", "href": "/farmers" },
+      { "name": "About", "href": "/about" }
+    ],
+    "users": [
+      { "name": "Home", "href": "/" },
+      { "name": "Products", "href": "/products" },
+      { "name": "Farmers", "href": "/farmers" },
+      { "name": "My Orders", "href": "/farmers" },
+      { "name": "About", "href": "/about" }
+    ],
+    "farmers": [
+      { "name": "Home", "href": "/" },
+      { "name": "Add Product", "href": "/create" },
+      { "name": "Manage Products", "href": "/managelist" },
+      { "name": "About", "href": "/about" }
+    ]
+  },
+  "heading": {
+    "title": "Fresh from Farm to Your Table",
+    "description": "Connect directly with local farmers and get the freshest produce delivered to your doorstep"
+  }
+}
