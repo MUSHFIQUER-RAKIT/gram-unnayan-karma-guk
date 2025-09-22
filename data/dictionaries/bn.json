@@ -1,0 +1,74 @@
+{
+  "navBar": [
+    { "name": "হোম", "href": "/" },
+    {
+      "name": "আমাদের সম্পর্কে",
+      "href": "/about",
+      "sub": [
+        {
+          "name": "দৃষ্টি মিশন মূল্যবোধ",
+          "href": "/about/vision-mission-values"
+        },
+        {
+          "name": "প্রতিষ্ঠাতার ভাবনা",
+          "href": "/about/thoughts-of-the-founder"
+        },
+        {
+          "name": "আইনি অবস্থা",
+          "href": "/about/legal-status"
+        },
+        {
+          "name": "আমাদের অংশীদার",
+          "href": "/about/our-partners"
+        },
+        {
+          "name": "এক নজরে",
+          "href": "/about/at-a-glance"
+        }
+      ]
+    },
+    {
+      "name": "ব্যবস্থাপনা",
+      "href": "/management",
+      "sub": [
+        {
+          "name": "সাধারণ কমিটি",
+          "href": "/management/general-committee"
+        },
+        {
+          "name": "কার্যনির্বাহী কমিটি",
+          "href": "/management/executive-committee"
+        },
+        {
+          "name": "পরামর্শক কমিটি",
+          "href": "/management/advisory-committee"
+        }
+      ]
+    },
+    {
+      "name": "প্রোগ্রামসমূহ",
+      "href": "/programs",
+      "sub": [
+        {
+          "name": "মাইক্রোফাইন্যান্স",
+          "href": "/programs/microfinance"
+        },
+        {
+          "name": "কার্যনির্বাহী কমিটি",
+          "href": "/management/executive-committee"
+        },
+        {
+          "name": "পরামর্শক কমিটি",
+          "href": "/management/advisory-committee"
+        }
+      ]
+    },
+    { "name": "প্রকাশনা ও নোটিশ", "href": "/publications" },
+    { "name": "সংবাদ ও কর্মসংস্থান", "href": "/news" },
+    { "name": "অনুদান", "href": "/" }
+  ],
+  "heading": {
+    "title": "Fresh from Farm to Your Table",
+    "description": "Connect directly with local farmers and get the freshest produce delivered to your doorstep"
+  }
+}

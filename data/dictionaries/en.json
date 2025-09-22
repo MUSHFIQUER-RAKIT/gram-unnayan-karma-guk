@@ -1,0 +1,74 @@
+{
+  "navBar": [
+    { "name": "Home", "href": "/" },
+    {
+      "name": "About",
+      "href": "/about",
+      "sub": [
+        {
+          "name": "Vision Mission Values",
+          "href": "/about/vision-mission-values"
+        },
+        {
+          "name": "Thoughts Of The Founder",
+          "href": "/about/thoughts-of-the-founder"
+        },
+        {
+          "name": "Legal Status",
+          "href": "/about/legal-status"
+        },
+        {
+          "name": "Our Partners",
+          "href": "/about/our-partners"
+        },
+        {
+          "name": "At A Glance",
+          "href": "/about/at-a-glance"
+        }
+      ]
+    },
+    {
+      "name": "Management",
+      "href": "/management",
+      "sub": [
+        {
+          "name": "General Committee",
+          "href": "/management/general-committee"
+        },
+        {
+          "name": "Executive Committee",
+          "href": "/management/executive-committee"
+        },
+        {
+          "name": "Advisory Committee",
+          "href": "/management/advisory-committee"
+        }
+      ]
+    },
+    {
+      "name": "Programs",
+      "href": "/programs",
+      "sub": [
+        {
+          "name": "Microfinance",
+          "href": "/programs/microfinance"
+        },
+        {
+          "name": "Executive Committee",
+          "href": "/management/executive-committee"
+        },
+        {
+          "name": "Advisory Committee",
+          "href": "/management/advisory-committee"
+        }
+      ]
+    },
+    { "name": "Publications & Notice", "href": "/publications" },
+    { "name": "News & Career", "href": "/news" },
+    { "name": "Donate", "href": "/" }
+  ],
+  "heading": {
+    "title": "Fresh from Farm to Your Table",
+    "description": "Connect directly with local farmers and get the freshest produce delivered to your doorstep"
+  }
+}

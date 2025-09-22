@@ -2,13 +2,36 @@
 import { Facebook, Linkedin, Mail, Phone, Youtube } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { usePathname, useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
+import Search from "./Search";
 
-export default function Header() {
+export default function Header({ navBar }) {
+  const pathName = usePathname();
+  const router = useRouter();
+
   const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
-    <header className=" w-full bg-white shadow-md fixed top-0 left-0 z-50">
+    <header className="w-full">
+      {/* //top header  */}
       <div className=" bg-primary-700 text-white  ">
         <div className="flex justify-between max-w-7xl mx-auto p-2  text-sm ">
           <ul className="flex gap-2">
@@ -18,79 +41,106 @@ export default function Header() {
             </li>
             <li>|</li>
             <li className="flex gap-2">
-              <Phone />
+              <Phone size={18} />
               01733366999
             </li>
           </ul>
 
           <ul className="flex  gap-1.5">
             <li>
-              <Facebook />
+              <Facebook size={18} />
             </li>
             <li>
-              <Linkedin />
+              <Linkedin size={18} />
             </li>
             <li>
-              <Youtube />
+              <Youtube size={18} />
             </li>
           </ul>
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6  lg:px-8">
-        <div className="flex justify-between items-center h-16">
-          <Link href="/">
-            <Image src="/favicon.png" width={48} height={48} alt="GUK" />
-          </Link>
+      <div
+        className={`
+            w-full
+            transition-all duration-300 ease-in-out
+            ${
+              scrolled
+                ? "fixed top-0 left-0 z-50 bg-white/30 backdrop-blur-md shadow-lg"
+                : ""
+            }
+          `}
+      >
+        <div className="max-w-7xl mx-auto px-4 sm:px-6  lg:px-8">
+          <div className="flex justify-between items-center h-16">
+            <Link href="/">
+              <Image src="/favicon.png" width={48} height={48} alt="GUK" />
+            </Link>
 
-          {/* Desktop Menu */}
-          <nav className="hidden md:flex space-x-6">
-            <Link href="/" className="hover:text-green-600">
-              Home
-            </Link>
-            <Link href="/about" className="hover:text-green-600">
-              About
-            </Link>
-            <Link href="/programs" className="hover:text-green-600">
-              Programs
-            </Link>
-            <Link href="/donate" className="hover:text-green-600">
-              Donate
-            </Link>
-            <Link href="/contact" className="hover:text-green-600">
-              Contact
-            </Link>
-          </nav>
+            {/* Desktop Menu */}
+            <nav className="hidden md:flex space-x-6 ">
+              {navBar.map((item, index) => (
+                <ul key={index} className="relative group">
+                  <li>
+                    <Link
+                      href={item?.href}
+                      className={`${
+                        item.href === pathName
+                          ? "text-primary-600 dark:text-primary-600 font-medium"
+                          : ""
+                      } `}
+                    >
+                      {item?.name}
+                    </Link>
+                  </li>
+                  {item?.sub && (
+                    <ul className="absolute left-0 top-full z-10 min-w-[200px] overflow-auto rounded-lg border border-slate-200 bg-white p-1.5 shadow-lg focus:outline-none hidden group-hover:block">
+                      {item?.sub.map((ite, i) => (
+                        <li
+                          key={i}
+                          className="cursor-pointer text-slate-800 flex w-full text-sm items-center rounded-md p-3 transition-all hover:bg-slate-100"
+                        >
+                          {ite.name}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </ul>
+              ))}
+            </nav>
 
-          {/* Mobile Menu Button */}
-          <button
-            className="md:hidden flex items-center text-gray-700 focus:outline-none"
-            onClick={() => setIsOpen(!isOpen)}
-          >
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+            <Search />
+
+            {/* Mobile Menu Button */}
+            <button
+              className="md:hidden flex items-center text-gray-700 focus:outline-none"
+              onClick={() => setIsOpen(!isOpen)}
             >
-              {isOpen ? (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              ) : (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              )}
-            </svg>
-          </button>
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                {isOpen ? (
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                ) : (
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                )}
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
 
