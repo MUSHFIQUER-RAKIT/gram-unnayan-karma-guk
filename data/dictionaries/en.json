@@ -65,10 +65,111 @@
     },
     { "name": "Publications & Notice", "href": "/publications" },
     { "name": "News & Career", "href": "/news" },
-    { "name": "Donate", "href": "/" }
+    { "name": "Donate", "href": "/donate" }
   ],
   "heading": {
     "title": "Fresh from Farm to Your Table",
     "description": "Connect directly with local farmers and get the freshest produce delivered to your doorstep"
+  },
+  "whatWeDo": {
+    "left": [
+      {
+        "title": "Microfinance",
+        "des": "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
+        "src": "/micro_finance.jpg"
+      },
+      {
+        "title": "Healthcare",
+        "des": "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
+        "src": "/health.jpg"
+      },
+      {
+        "title": "Education",
+        "des": "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
+        "src": "/education.jpg"
+      }
+    ],
+    "right": [
+      {
+        "title": "GUK Eye Hospital",
+        "des": "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
+        "src": "/EH2.jpg"
+      },
+      {
+        "title": "Development Projects",
+        "des": "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
+        "src": "/projects.jpg"
+      },
+      {
+        "title": "Micro Enterprise",
+        "des": "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
+        "src": "/ME.jpg"
+      }
+    ]
+  },
+  "newsandEvents": [
+    {
+      "title": "Meeting with Grameen Communication high officials",
+      "src": "/IMG_20180220_094706-scaled.jpg",
+      "description": "A meeting was held today at GUK Dhaka Office with Grameen Communication high officials for software upgradation and business development, where representatives from GC, Mr.",
+      "tag": "News"
+    },
+    {
+      "title": "Meeting with Grameen Communication high officials",
+      "src": "/IMG_20180220_094706-scaled.jpg",
+      "description": "A meeting was held today at GUK Dhaka Office with Grameen Communication high officials for software upgradation and business development, where representatives from GC, Mr.",
+      "tag": "News"
+    },
+    {
+      "title": "Meeting with Grameen Communication high officials",
+      "src": "/IMG_20180220_094706-scaled.jpg",
+      "description": "A meeting was held today at GUK Dhaka Office with Grameen Communication high officials for software upgradation and business development, where representatives from GC, Mr.",
+      "tag": "News"
+    },
+    {
+      "title": "Meeting with Grameen Communication high officials",
+      "src": "/IMG_20180220_094706-scaled.jpg",
+      "description": "A meeting was held today at GUK Dhaka Office with Grameen Communication high officials for software upgradation and business development, where representatives from GC, Mr.",
+      "tag": "News"
+    },
+    {
+      "title": "Meeting with Grameen Communication high officials",
+      "src": "/IMG_20180220_094706-scaled.jpg",
+      "description": "A meeting was held today at GUK Dhaka Office with Grameen Communication high officials for software upgradation and business development, where representatives from GC, Mr.",
+      "tag": "News"
+    },
+    {
+      "title": "Meeting with Grameen Communication high officials",
+      "src": "/IMG_20180220_094706-scaled.jpg",
+      "description": "A meeting was held today at GUK Dhaka Office with Grameen Communication high officials for software upgradation and business development, where representatives from GC, Mr.",
+      "tag": "News"
+    }
+  ],
+  "footer": {
+    "webDes": {
+      "title": "Gram Unnayan Karma",
+      "des": "Gram Unnayan Karma",
+      "description": "GUK acts as a social activist to create opportunities for the under privileged people by providing multi-dimensional support services for their sustainable socio-economic growth and development."
+    },
+    "list": {
+      "Quick Links": [
+        { "name": "Home", "href": "/" },
+        { "name": "About", "href": "/products" },
+        { "name": "Publication", "href": "/farmers" },
+        { "name": "Notice", "href": "/about" },
+        { "name": "News & Career", "href": "/about" }
+      ],
+      "Contact Info": [
+        {
+          "name": "Head Office: GUK Tower, Banani, Bogura –5800, Bangladesh",
+          "href": "/register?role=farmers"
+        },
+        {
+          "name": "Dhaka Office Address: House# 31, Road# 14, Sector# 13, Uttara, Dhaka, Bangladesh",
+          "href": "/create"
+        },
+        { "name": "Phone:+8802589904795", "href": "/managelist" }
+      ]
+    }
   }
 }

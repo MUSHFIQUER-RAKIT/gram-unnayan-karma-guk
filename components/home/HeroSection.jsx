@@ -52,10 +52,7 @@ export default function HeroSection() {
             <button className="py-4 px-6 mr-3 text-sm bg-primary-600 text-white rounded-lg cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-primary-800">
               At a Glance
             </button>
-            <button
-              type="button"
-              class="py-4 px-6 text-sm border border-gray-300 rounded-lg shadow-xs bg-white font-semibold text-gray-900 transition-all duration-500 hover:bg-gray-300"
-            >
+            <button className="py-4 px-6 text-sm border border-gray-300 rounded-lg shadow-xs bg-white font-semibold text-gray-900 transition-all duration-500 hover:bg-gray-300">
               Our Partners
             </button>
           </div>
