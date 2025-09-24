@@ -64,7 +64,20 @@
       ]
     },
     { "name": "Publications & Notice", "href": "/publications" },
-    { "name": "News & Career", "href": "/news" },
+    {
+      "name": "News & Career",
+      "href": "#",
+      "sub": [
+        {
+          "name": "News & Events",
+          "href": "/news-and-events"
+        },
+        {
+          "name": "Career",
+          "href": "/career"
+        }
+      ]
+    },
     { "name": "Donate", "href": "/donate" }
   ],
   "heading": {

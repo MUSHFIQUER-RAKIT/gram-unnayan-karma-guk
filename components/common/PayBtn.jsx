@@ -1,9 +1,12 @@
 "use client";
 
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 
 export default function PayBtn() {
   const router = useRouter();
+  const pathName = usePathname();
+
+  const locales = pathName.split("/")[1];
   function handleCount() {
     const currentCount = parseInt(
       localStorage.getItem("totalDonation") || "0",
@@ -14,7 +17,7 @@ export default function PayBtn() {
 
     localStorage.setItem("totalDonation", newCount.toString());
 
-    router.push("/");
+    router.push(`/${locales}`);
   }
   return (
     <button

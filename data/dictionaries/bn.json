@@ -72,7 +72,17 @@
     },
     {
       "name": "সংবাদ ও ক্যারিয়ার",
-      "href": "/news"
+      "href": "/news",
+      "sub": [
+        {
+          "name": "News & Events",
+          "href": "/news-and-events"
+        },
+        {
+          "name": "Career",
+          "href": "/career"
+        }
+      ]
     },
     {
       "name": "দান করুন",

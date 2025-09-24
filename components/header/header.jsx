@@ -102,13 +102,17 @@ export default function Header({ navBar }) {
                               item?.href
                                 ? "text-primary-500 font-bold"
                                 : ""
-                            } hover:text-primary-500`}
+                            } hover:text-primary-500 ${
+                              item?.sub
+                                ? "before:content-['▼'] before:text-white before:absolute before:top-5   before:z-50  before:opacity-0 group-hover:before:opacity-100 before:transition-opacity "
+                                : ""
+                            } `}
                           >
                             {item?.name}
                           </Link>
                         </li>
                         {item?.sub && (
-                          <ul className="absolute z-40 left-0 top-6   min-w-[800px] overflow-auto rounded-lg border border-slate-200 bg-primary-600/90  backdrop-blur-md shadow-lg  p-1.5  focus:outline-none hidden group-hover:block">
+                          <ul className="absolute z-40 left-0 top-6  min-w-[800px] overflow-auto rounded-lg border border-slate-200 bg-primary-600/90   backdrop-blur-3xl shadow-lg  p-1.5  focus:outline-none hidden group-hover:block">
                             {item?.sub.map((ite, i) => (
                               <li
                                 key={i}
