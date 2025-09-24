@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import DonationStats from "./DonationStats";
 
 export default function HeroSection() {
@@ -48,9 +49,12 @@ export default function HeroSection() {
             <button className="py-4 px-6 mr-3 text-sm bg-primary-600 text-white rounded-lg cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-primary-800">
               At a Glance
             </button>
-            <button className="py-4 px-6 text-sm border border-gray-300 rounded-lg shadow-xs bg-white font-semibold text-gray-900 transition-all duration-500 hover:bg-gray-300">
-              Our Partners
-            </button>
+            <Link
+              href="en/about/vision-mission-values"
+              className="py-4 px-6 text-sm border border-gray-300 rounded-lg shadow-xs bg-white font-semibold text-gray-900 transition-all duration-500 hover:bg-gray-300"
+            >
+              Vision, Mission & Values
+            </Link>
           </div>
         </div>
         <div className="relative z-10 w-2/3">

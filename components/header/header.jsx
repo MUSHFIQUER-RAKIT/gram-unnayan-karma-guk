@@ -91,9 +91,9 @@ export default function Header({ navBar }) {
               pathName !== `/${locales}/donate/paynow` && (
                 <>
                   {/* Desktop Menu */}
-                  <nav className="hidden md:flex space-x-6 ">
+                  <nav className="hidden md:flex space-x-6 relative ">
                     {navBar.map((item, index) => (
-                      <ul key={index} className="relative group">
+                      <ul key={index} className=" group">
                         <li>
                           <Link
                             href={`/${locales}${item?.href}`}
@@ -108,13 +108,15 @@ export default function Header({ navBar }) {
                           </Link>
                         </li>
                         {item?.sub && (
-                          <ul className="absolute left-0 top-full z-10 min-w-[200px] overflow-auto rounded-lg border border-slate-200 bg-white p-1.5 shadow-lg focus:outline-none hidden group-hover:block">
+                          <ul className="absolute z-40 left-0 top-6   min-w-[800px] overflow-auto rounded-lg border border-slate-200 bg-primary-600/90  backdrop-blur-md shadow-lg  p-1.5  focus:outline-none hidden group-hover:block">
                             {item?.sub.map((ite, i) => (
                               <li
                                 key={i}
-                                className="cursor-pointer text-slate-800 flex w-full text-sm items-center rounded-md p-3 transition-all hover:bg-slate-100"
+                                className="cursor-pointer text-white  flex w-full text-sm items-center rounded-md p-3 transition-all hover:bg-primary-700/90 "
                               >
-                                {ite.name}
+                                <Link href={`/${locales}${ite?.href}`}>
+                                  {ite.name}
+                                </Link>
                               </li>
                             ))}
                           </ul>
