@@ -52,42 +52,42 @@ export default function Gallery() {
                     <div>
                       <img
                         className="w-full h-40 max-w-full rounded-lg"
-                        src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2940&amp;q=80"
+                        src="/gallery/378398705.jpg"
                         alt="image-photo"
                       />
                     </div>
                     <div>
                       <img
                         className="w-full h-40 max-w-full rounded-lg"
-                        src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2940&amp;q=80"
+                        src="/gallery/394545910.jpg"
                         alt="image-photo"
                       />
                     </div>
                     <div>
                       <img
                         className="w-full h-40 max-w-full rounded-lg"
-                        src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2940&amp;q=80"
+                        src="/gallery/4-1024x682.jpg"
                         alt="image-photo"
                       />
                     </div>
                     <div>
                       <img
                         className="w-full h-40 max-w-full rounded-lg"
-                        src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2940&amp;q=80"
+                        src="/gallery/EC_Committe_of_GUK_1-1024x683.jpg"
                         alt="image-photo"
                       />
                     </div>
                     <div>
                       <img
                         className="w-full h-40 max-w-full rounded-lg"
-                        src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2940&amp;q=80"
+                        src="/gallery/GC2-768x512-1.jpg"
                         alt="image-photo"
                       />
                     </div>
                     <div>
                       <img
                         className="w-full h-40 max-w-full rounded-lg"
-                        src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2940&amp;q=80"
+                        src="/gallery/GC3-768x512-1.jpg"
                         alt="image-photo"
                       />
                     </div>
@@ -106,7 +106,6 @@ export default function Gallery() {
                         src="https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2762&amp;q=80"
                         alt="image-photo"
                       />
-                      v
                     </div>
                     <div>
                       <img

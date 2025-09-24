@@ -1,4 +1,5 @@
 import Image from "next/image";
+import DonationStats from "./DonationStats";
 
 export default function HeroSection() {
   return (
@@ -40,12 +41,7 @@ export default function HeroSection() {
               <div className="font-semibold text-3xl tracking-tight">23000</div>
             </div>
 
-            <div className="flex flex-col gap-2 h-28 text-white rounded-xl shadow-md p-6 max-w-[240px] bg-primary-700  ">
-              <div className="font-semibold text-md">Total Donation</div>
-              <div className="font-semibold text-3xl tracking-tight">
-                $56000+
-              </div>
-            </div>
+            <DonationStats />
           </div>
 
           <div>
