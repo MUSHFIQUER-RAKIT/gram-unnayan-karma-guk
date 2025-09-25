@@ -6,6 +6,8 @@ import { getDictionary } from "@/lib/dictionaries";
 import { MessagesSquare } from "lucide-react";
 import { Inter } from "next/font/google";
 import Link from "next/link";
+import { ToastContainer } from "react-toastify";
+import "swiper/css";
 import "../globals.css";
 
 const inter = Inter({
@@ -28,7 +30,10 @@ export default async function RootLayout({ children, params: { lang } }) {
       <body className={`${inter.className} antialiased scroll-smooth`}>
         <Header navBar={navBar} />
 
-        <main>{children}</main>
+        <main>
+          <ToastContainer position="bottom-right" autoClose={2000} />
+          {children}
+        </main>
 
         <FooterLayout
           DefaultFooter={

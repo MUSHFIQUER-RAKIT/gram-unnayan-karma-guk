@@ -1,3 +1,4 @@
+import DonationSection from "@/components/home/DonationSection";
 import Gallery from "@/components/home/Gallery";
 import HeroSection from "@/components/home/HeroSection";
 import NewsAndEvents from "@/components/home/NewsAndEvents";
@@ -12,6 +13,7 @@ export default async function Home({ params: { lang } }) {
       <HeroSection />
       <WhatWeDo data={whatWeDo} />
       <NewsAndEvents data={newsandEvents} />
+      <DonationSection />
       <Gallery />
     </>
   );

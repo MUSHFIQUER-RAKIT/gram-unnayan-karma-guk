@@ -83,7 +83,7 @@ export default function Header({ navBar }) {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6  lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <Link href="/">
+            <Link href={`/${locales}`}>
               <Image src="/favicon.png" width={48} height={48} alt="GUK" />
             </Link>
 
@@ -116,9 +116,12 @@ export default function Header({ navBar }) {
                             {item?.sub.map((ite, i) => (
                               <li
                                 key={i}
-                                className="cursor-pointer text-white  flex w-full text-sm items-center rounded-md p-3 transition-all hover:bg-primary-700/90 "
+                                className="cursor-pointer text-white  flex w-full text-sm items-center rounded-md transition-all hover:bg-primary-700/90 "
                               >
-                                <Link href={`/${locales}${ite?.href}`}>
+                                <Link
+                                  href={`/${locales}${ite?.href}`}
+                                  className=" w-full h-full p-3 "
+                                >
                                   {ite.name}
                                 </Link>
                               </li>

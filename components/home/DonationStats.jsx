@@ -13,9 +13,9 @@ export default function DonationStats() {
   }, []);
 
   return (
-    <div className="flex flex-col gap-2 h-28 text-white rounded-xl shadow-md p-6 max-w-[240px] bg-primary-700  ">
-      <div className="font-semibold text-md">Total Donation</div>
-      <div className="font-semibold text-3xl tracking-tight">
+    <div className="flex flex-col gap-2 h-24 md:h-28 text-white rounded-xl shadow-md p-4 md:p-6 max-w-[240px] bg-primary-700  ">
+      <div className="font-semibold text-sm md:text-lg">Total Donation</div>
+      <div className="font-semibold text-xs md:text-3xl tracking-tight">
         {totalDonation}+
       </div>
     </div>

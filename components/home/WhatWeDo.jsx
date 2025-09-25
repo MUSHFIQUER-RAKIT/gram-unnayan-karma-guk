@@ -6,7 +6,7 @@ export default function WhatWeDo({ data }) {
   return (
     <section className="p-8 max-w-7xl mx-auto space-y-8 ">
       <SectionHeader text="What We" high="Do" />
-      <div className="flex">
+      <div className="flex flex-col md:flex-row">
         <div>
           {data?.left?.map((item, i) => (
             <WhatWeDoCard
@@ -18,7 +18,7 @@ export default function WhatWeDo({ data }) {
           ))}
         </div>
 
-        <div className="text-primary-600 self-center text-center px-7 font-extrabold whitespace-pre leading-[3rem]">
+        <div className="text-primary-600 self-center text-center px-7 font-extrabold md:whitespace-pre leading-[3rem]">
           {`O\nU\nR\nW\nO\nR\nK\nS`}
         </div>
 

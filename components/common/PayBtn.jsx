@@ -1,6 +1,7 @@
 "use client";
 
 import { usePathname, useRouter } from "next/navigation";
+import { toast } from "react-toastify";
 
 export default function PayBtn() {
   const router = useRouter();
@@ -17,6 +18,13 @@ export default function PayBtn() {
 
     localStorage.setItem("totalDonation", newCount.toString());
 
+    toast.success("Donation Succesfull!", {
+      hideProgressBar: false,
+      closeOnClick: false,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+    });
     router.push(`/${locales}`);
   }
   return (

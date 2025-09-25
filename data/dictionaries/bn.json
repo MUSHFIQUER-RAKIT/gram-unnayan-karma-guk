@@ -68,7 +68,17 @@
     },
     {
       "name": "প্রকাশনা ও বিজ্ঞপ্তি",
-      "href": "/publications"
+      "href": "/publications",
+      "sub": [
+        {
+          "name": "রিপোর্ট",
+          "href": "/publications/report"
+        },
+        {
+          "name": "লক্ষ্য",
+          "href": "/publications/notice"
+        }
+      ]
     },
     {
       "name": "সংবাদ ও ক্যারিয়ার",
@@ -85,8 +95,8 @@
       ]
     },
     {
-      "name": "দান করুন",
-      "href": "/donate"
+      "name": "Donation",
+      "href": "/donation"
     }
   ],
   "heading": {
@@ -211,5 +221,65 @@
         }
       ]
     }
-  }
+  },
+  "developmenPartners": [
+    {
+      "id": 1,
+      "logoUrl": "/partners/1200px-Japan_International_Cooperation_Agency_logo.svg-300x242.png"
+    },
+    { "id": 2, "logoUrl": "/partners/RDA-Logo.png" },
+    {
+      "id": 3,
+      "logoUrl": "/partners/WhatsApp-Image-2023-11-01-at-13.47.56_33b465d9-300x138.jpg"
+    },
+    { "id": 4, "logoUrl": "/partners/logo-pksf-269x300.png" },
+    { "id": 5, "logoUrl": "/partners/logo-idcol-300x122.png" },
+    { "id": 6, "logoUrl": "/partners/ifad-2.jpg" },
+    {
+      "id": 7,
+      "logoUrl": "/partners/csm_2017-europeaid-logo_e2c4ca4309-300x181.png"
+    },
+    { "id": 8, "logoUrl": "/partners/brac-bank_jobeduexam.png" },
+    { "id": 9, "logoUrl": "/partners/bd.png" },
+    { "id": 10, "logoUrl": "/partners/bank-asia-squarelogo-1426228687552.png" },
+    { "id": 11, "logoUrl": "/partners/adb.png" }
+  ],
+  "networkPartners": [
+    {
+      "id": 1,
+      "logoUrl": "/nerworkpartners/Sylhet-Agricultural-Logo.png"
+    },
+    {
+      "id": 2,
+      "logoUrl": "/nerworkpartners/WhatsApp-Image-2023-10-21-at-18.38.58_f138de86.jpg"
+    },
+    {
+      "id": 3,
+      "logoUrl": "/nerworkpartners/WhatsApp-Image-2023-10-21-at-18.40.47_7738f0de.jpg"
+    },
+    {
+      "id": 4,
+      "logoUrl": "/nerworkpartners/WhatsApp-Image-2023-10-21-at-18.41.57_9b6ba444.jpg"
+    },
+    { "id": 5, "logoUrl": "/nerworkpartners/acab.png" },
+    { "id": 6, "logoUrl": "/nerworkpartners/agri.png" },
+    {
+      "id": 7,
+      "logoUrl": "/nerworkpartners/aravind.png"
+    },
+    {
+      "id": 8,
+      "logoUrl": "/nerworkpartners/bangladesh-agriculture-university-logo.jpg"
+    },
+    {
+      "id": 9,
+      "logoUrl": "/nerworkpartners/bd-prani-p7xfo19ayxx0l2yllvxf7gmo3n63m8pcmrpq1lyzho.png"
+    },
+    { "id": 10, "logoUrl": "/nerworkpartners/bela.png" },
+    { "id": 11, "logoUrl": "/nerworkpartners/cdf.png" },
+    { "id": 12, "logoUrl": "/nerworkpartners/essex.png" },
+    { "id": 13, "logoUrl": "/nerworkpartners/inafi-logo.png" },
+    { "id": 14, "logoUrl": "/nerworkpartners/rajshah.png" },
+    { "id": 15, "logoUrl": "/nerworkpartners/shimane.png" }
+  ]
 }

@@ -8,7 +8,7 @@ export default function Gallery() {
   return (
     <section className="p-8 max-w-7xl mx-auto space-y-8">
       <SectionHeader text="Gallery" high="Highlight" />
-      <div className="flex">
+      <div className="flex flex-col md:flex-row">
         <div className="w-full">
           <div className="relative right-0">
             <div className="w-full">
