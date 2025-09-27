@@ -4,13 +4,13 @@ import FooterLayout from "@/components/footer/FooterLayout";
 import Header from "@/components/header/header";
 import { getDictionary } from "@/lib/dictionaries";
 import { MessagesSquare } from "lucide-react";
-import { Inter } from "next/font/google";
+import { Open_Sans } from "next/font/google";
 import Link from "next/link";
 import { ToastContainer } from "react-toastify";
 import "swiper/css";
 import "../globals.css";
 
-const inter = Inter({
+const inter = Open_Sans({
   subsets: ["latin"],
 });
 

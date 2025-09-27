@@ -1,5 +1,5 @@
 "use client";
-import { Facebook, Linkedin, Mail, Phone, Youtube } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -56,13 +56,25 @@ export default function Header({ navBar }) {
 
           <ul className="flex  gap-1.5">
             <li>
-              <Facebook size={18} />
+              <Link href="https://www.facebook.com/guk.org.bd" target="_blank">
+                <img className="w-7" src="/icon/icons8-facebook-48.png" />
+              </Link>
             </li>
             <li>
-              <Linkedin size={18} />
+              <Link
+                href="https://www.linkedin.com/company/gram-unnayan-karma-guk"
+                target="_blank"
+              >
+                <img className="w-7" src="/icon/icons8-linkedin-48.png" />
+              </Link>
             </li>
             <li>
-              <Youtube size={18} />
+              <Link
+                href="https://www.youtube.com/channel/UCa18Gu5eZJ2vFjjnuXA92Iw"
+                target="_blank"
+              >
+                <img className="w-7" src="/icon/icons8-youtube-48.png" />
+              </Link>
             </li>
           </ul>
         </div>
@@ -81,7 +93,7 @@ export default function Header({ navBar }) {
     }
   `}
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6  lg:px-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6  lg:px-0">
           <div className="flex justify-between items-center h-16">
             <Link href={`/${locales}`}>
               <Image src="/favicon.png" width={48} height={48} alt="GUK" />
@@ -93,7 +105,7 @@ export default function Header({ navBar }) {
                   {/* Desktop Menu */}
                   <nav className="hidden md:flex space-x-6 relative ">
                     {navBar.map((item, index) => (
-                      <ul key={index} className=" group">
+                      <ul key={index} className=" group relative">
                         <li>
                           <Link
                             href={`/${locales}${item?.href}`}
@@ -106,13 +118,17 @@ export default function Header({ navBar }) {
                               item?.sub
                                 ? "before:content-['▼'] before:text-white before:absolute before:top-5   before:z-50  before:opacity-0 group-hover:before:opacity-100 before:transition-opacity "
                                 : ""
+                            }  ${
+                              item?.name === "Donate"
+                                ? "bg-gradient-to-r from-pink-500 to-rose-500 text-white px-4 py-3 rounded-full transition-all duration-300 hover:shadow-lg hover:text-white hover:animate-pulse"
+                                : ""
                             } `}
                           >
                             {item?.name}
                           </Link>
                         </li>
                         {item?.sub && (
-                          <ul className="absolute z-40 left-0 top-6  min-w-[800px] overflow-auto rounded-lg border border-slate-200 bg-primary-600/90   backdrop-blur-3xl shadow-lg  p-1.5  focus:outline-none hidden group-hover:block">
+                          <ul className="absolute z-40 -left-10 min-w-[250px]  overflow-auto rounded-lg border border-slate-200 bg-primary-600/90   backdrop-blur-3xl shadow-lg  p-1.5  focus:outline-none hidden group-hover:block">
                             {item?.sub.map((ite, i) => (
                               <li
                                 key={i}
@@ -120,7 +136,7 @@ export default function Header({ navBar }) {
                               >
                                 <Link
                                   href={`/${locales}${ite?.href}`}
-                                  className=" w-full h-full p-3 "
+                                  className=" w-full h-full p-3  "
                                 >
                                   {ite.name}
                                 </Link>

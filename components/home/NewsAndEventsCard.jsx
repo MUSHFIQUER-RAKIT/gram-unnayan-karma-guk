@@ -1,8 +1,15 @@
+import { Inter } from "next/font/google";
 import Image from "next/image";
+
+const inter = Inter({
+  subsets: ["latin"],
+});
 
 export default function NewsAndEventsCard({ item }) {
   return (
-    <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 group">
+    <div
+      className={`max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 group`}
+    >
       <a href="#">
         <div className=" w-96 overflow-hidden relative ">
           <Image
@@ -19,11 +26,11 @@ export default function NewsAndEventsCard({ item }) {
       </a>
       <div className="p-5 group-hover:bg-gray-100">
         <a href="#">
-          <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+          <h5 className="mb-2 font-serif font-medium text-2xl  tracking-tight text-gray-900 dark:text-white">
             {item?.title}
           </h5>
         </a>
-        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+        <p className="mb-3 font-sans text-gray-500 dark:text-gray-400">
           {item?.description}
         </p>
 

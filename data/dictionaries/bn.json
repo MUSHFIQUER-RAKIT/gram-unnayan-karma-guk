@@ -95,8 +95,8 @@
       ]
     },
     {
-      "name": "Donation",
-      "href": "/donation"
+      "name": "Donate",
+      "href": "/donate"
     }
   ],
   "heading": {
@@ -281,5 +281,34 @@
     { "id": 13, "logoUrl": "/nerworkpartners/inafi-logo.png" },
     { "id": 14, "logoUrl": "/nerworkpartners/rajshah.png" },
     { "id": 15, "logoUrl": "/nerworkpartners/shimane.png" }
-  ]
+  ],
+  "reports": {
+    "report": [
+      {
+        "title": "“দেশি মুরগির সম্প্রসারণ ও বাজার উন্নয়ন” শীর্ষক ভ্যালু চেইন উন্নয়ন উপ- প্রকল্প",
+        "imgUrl": "/Tree-Plantation-Program-2025-1.jpg",
+        "download": "#"
+      },
+      {
+        "title": "“দেশি মুরগির সম্প্রসারণ ও বাজার উন্নয়ন” শীর্ষক ভ্যালু চেইন উন্নয়ন উপ- প্রকল্প",
+        "imgUrl": "/Tree-Plantation-Program-2025-1.jpg",
+        "download": "#"
+      },
+      {
+        "title": "“দেশি মুরগির সম্প্রসারণ ও বাজার উন্নয়ন” শীর্ষক ভ্যালু চেইন উন্নয়ন উপ- প্রকল্প",
+        "imgUrl": "/Tree-Plantation-Program-2025-1.jpg",
+        "download": "#"
+      },
+      {
+        "title": "“দেশি মুরগির সম্প্রসারণ ও বাজার উন্নয়ন” শীর্ষক ভ্যালু চেইন উন্নয়ন উপ- প্রকল্প",
+        "imgUrl": "/Tree-Plantation-Program-2025-1.jpg",
+        "download": "#"
+      },
+      {
+        "title": "“দেশি মুরগির সম্প্রসারণ ও বাজার উন্নয়ন” শীর্ষক ভ্যালু চেইন উন্নয়ন উপ- প্রকল্প",
+        "imgUrl": "/Tree-Plantation-Program-2025-1.jpg",
+        "download": "#"
+      }
+    ]
+  }
 }
