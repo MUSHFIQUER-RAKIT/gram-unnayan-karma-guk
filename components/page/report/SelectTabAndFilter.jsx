@@ -67,7 +67,7 @@ export default function SelectTabAndFilter({ lang }) {
     <div>
       <div className="flex flex-wrap gap-2 p-4 ">
         {tabOptions.map((option) => (
-          <div key={option.value}>
+          <div key={option.value} className="mb-5 ">
             <input
               type="radio"
               id={`tab-${option.value || "featured"}`}
@@ -75,13 +75,13 @@ export default function SelectTabAndFilter({ lang }) {
               value={option.value}
               checked={currentTab === option.value}
               onChange={handleTabChange}
-              className="hidden"
+              className="hidden "
             />
 
             <label
               htmlFor={`tab-${option.value || "featured"}`}
               className={`
-              px-4 py-3 cursor-pointer rounded-md transition-colors duration-200 text-sm whitespace-nowrap
+              px-4  py-3 cursor-pointer rounded-md transition-colors duration-200 text-sm whitespace-nowrap
               ${
                 currentTab === option.value
                   ? " text-primary-500 shadow-md font-semibold dark:bg-primary-600 border  "

@@ -49,8 +49,7 @@ export default async function FooterContainer({ footer }) {
               <span>Find Us On Google Map</span>
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7243.097606094261!2d89.38162400000002!3d24.810899!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fc557cdc8b77eb%3A0x6a43d012656434ec!2sGUK%20Tower%20-%20Bogura!5e0!3m2!1sen!2sbd!4v1758621160060!5m2!1sen!2sbd"
-                width="400"
-                height="300"
+                className=" w-[300px] h-[200px] md:w-[400px] md:h-[300px]"
                 style={{ border: 0 }}
                 allowFullScreen=""
                 loading="lazy"
