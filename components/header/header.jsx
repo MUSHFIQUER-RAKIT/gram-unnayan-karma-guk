@@ -8,7 +8,6 @@ import Search from "./Search";
 
 export default function Header({ navBar }) {
   const pathName = usePathname();
-
   const locales = pathName.split("/")[1];
 
   const [isOpen, setIsOpen] = useState(false);
@@ -30,6 +29,13 @@ export default function Header({ navBar }) {
     };
   }, []);
 
+  const [openSubMenus, setOpenSubMenus] = useState({});
+  const toggleSubMenu = (index) => {
+    setOpenSubMenus((prev) => ({
+      ...prev,
+      [index]: !prev[index],
+    }));
+  };
   return (
     <header
       className={`w-full ${
@@ -39,7 +45,6 @@ export default function Header({ navBar }) {
           : ""
       } `}
     >
-      {/* //top header  */}
       <div className=" bg-primary-700 text-white  ">
         <div className="flex justify-between max-w-7xl mx-auto p-2  text-sm ">
           <ul className="flex gap-2">
@@ -119,8 +124,8 @@ export default function Header({ navBar }) {
                                 ? "before:content-['▼'] before:text-white before:absolute before:top-5   before:z-50  before:opacity-0 group-hover:before:opacity-100 before:transition-opacity "
                                 : ""
                             }  ${
-                              item?.name === "Donate"
-                                ? "bg-gradient-to-r from-pink-500 to-rose-500 text-white px-4 py-3 rounded-full transition-all duration-300 hover:shadow-lg hover:text-white hover:animate-pulse"
+                              item?.name === "Donate" || item?.name === "ডোনেট"
+                                ? "bg-gradient-to-r from-primary-600 to-primary-700 text-white px-4 py-3 rounded-full transition-all duration-300 hover:shadow-lg hover:text-white hover:animate-pulse"
                                 : ""
                             } `}
                           >
@@ -186,23 +191,62 @@ export default function Header({ navBar }) {
 
       {/* Mobile Dropdown */}
       {isOpen && (
-        <div className="md:hidden bg-white border-t border-gray-200">
-          <nav className="flex flex-col space-y-2 p-4">
-            <Link href="/" className="hover:text-green-600">
-              Home
-            </Link>
-            <Link href="/about" className="hover:text-green-600">
-              About
-            </Link>
-            <Link href="/programs" className="hover:text-green-600">
-              Programs
-            </Link>
-            <Link href="/donate" className="hover:text-green-600">
-              Donate
-            </Link>
-            <Link href="/contact" className="hover:text-green-600">
-              Contact
-            </Link>
+        <div className="md:hidden fixed inset-x-0 top-24 bg-white shadow-lg border-t border-gray-200 z-40">
+          <nav className="flex flex-col space-y-1 p-4">
+            {navBar.map((item, index) => (
+              <div key={index} className="flex flex-col">
+                <div className="flex items-center justify-between w-full">
+                  <Link
+                    href={item?.href}
+                    className="py-2 text-nowrap  text-gray-700 hover:text-green-600"
+                  >
+                    {item?.name}
+                  </Link>
+
+                  {item?.sub && (
+                    <button
+                      type="button"
+                      onClick={() => toggleSubMenu(index)}
+                      className="p-2   w-full text-gray-500  hover:text-green-600 focus:outline-none transition-transform duration-200"
+                      aria-expanded={openSubMenus[index] ? "true" : "false"}
+                      aria-controls={`submenu-${index}`}
+                    >
+                      <svg
+                        className={`h-5 w-5 transform place-self-end ${
+                          openSubMenus[index] ? "rotate-180" : "rotate-0"
+                        }`}
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.25 4.25a.75.75 0 01-1.06 0L5.21 8.27a.75.75 0 01.02-1.06z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                    </button>
+                  )}
+                </div>
+
+                {item?.sub && openSubMenus[index] && (
+                  <div
+                    id={`submenu-${index}`}
+                    className="ml-4 pl-3 border-l border-gray-200 space-y-1 mt-1"
+                  >
+                    {item?.sub.map((ite, i) => (
+                      <Link
+                        key={i}
+                        href={`/${locales}${ite?.href}`}
+                        className="block py-2 text-sm text-gray-600 hover:text-green-600"
+                      >
+                        {ite.name}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
+            ))}
           </nav>
         </div>
       )}

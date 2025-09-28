@@ -19,7 +19,7 @@ export default function Search() {
           w-[50px] h-[50px]
           bg-white rounded-[25px] p-1
           border-4 border-white
-          ${isExpanded ? "w-[300px]" : ""}
+          ${isExpanded ? "w-[200px] md:w-[300px]" : ""}
           flex items-center mr-1
         `}
       >
