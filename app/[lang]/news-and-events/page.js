@@ -1,7 +1,7 @@
 import BreadCrumb from "@/components/common/BreadCrumb";
+import Pagination from "@/components/common/Pagination";
 import NewsCard from "@/components/page/NewsCard";
 import { getDictionary } from "@/lib/dictionaries";
-import { ArrowLeft, ArrowRight } from "lucide-react";
 import Image from "next/image";
 
 export default async function NewsAndEvents({ params: { lang } }) {
@@ -98,56 +98,7 @@ export default async function NewsAndEvents({ params: { lang } }) {
             <NewsCard key={i} item={item} />
           ))}
 
-          <div className="flex justify-center m-5">
-            <a
-              href="#"
-              className="flex items-center justify-center px-4 py-2 mx-1 text-gray-500 capitalize bg-white rounded-md cursor-not-allowed rtl:-scale-x-100 dark:bg-gray-800 dark:text-gray-600"
-            >
-              <ArrowLeft size={18} />
-            </a>
-
-            <a
-              href="#"
-              className="hidden px-4 py-2 mx-1 text-gray-700 transition-colors duration-300 transform bg-white rounded-md sm:inline dark:bg-gray-800 dark:text-gray-200 hover:bg-primary-500 dark:hover:bg-primary-500 hover:text-white dark:hover:text-gray-200"
-            >
-              1
-            </a>
-
-            <a
-              href="#"
-              className="hidden px-4 py-2 mx-1 text-gray-700 transition-colors duration-300 transform bg-white rounded-md sm:inline dark:bg-gray-800 dark:text-gray-200 hover:bg-primary-500 dark:hover:bg-primary-500 hover:text-white dark:hover:text-gray-200"
-            >
-              2
-            </a>
-
-            <a
-              href="#"
-              className="hidden px-4 py-2 mx-1 text-gray-700 transition-colors duration-300 transform bg-white rounded-md sm:inline dark:bg-gray-800 dark:text-gray-200 hover:bg-primary-500 dark:hover:bg-primary-500 hover:text-white dark:hover:text-gray-200"
-            >
-              ...
-            </a>
-
-            <a
-              href="#"
-              className="hidden px-4 py-2 mx-1 text-gray-700 transition-colors duration-300 transform bg-white rounded-md sm:inline dark:bg-gray-800 dark:text-gray-200 hover:bg-primary-500 dark:hover:bg-primary-500 hover:text-white dark:hover:text-gray-200"
-            >
-              9
-            </a>
-
-            <a
-              href="#"
-              className="hidden px-4 py-2 mx-1 text-gray-700 transition-colors duration-300 transform bg-white rounded-md sm:inline dark:bg-gray-800 dark:text-gray-200 hover:bg-primary-500 dark:hover:bg-primary-500 hover:text-white dark:hover:text-gray-200"
-            >
-              10
-            </a>
-
-            <a
-              href="#"
-              className="flex items-center justify-center px-4 py-2 mx-1 text-gray-700 transition-colors duration-300 transform bg-white rounded-md rtl:-scale-x-100 dark:bg-gray-800 dark:text-gray-200 hover:bg-primary-500 dark:hover:bg-primary-500 hover:text-white dark:hover:text-gray-200"
-            >
-              <ArrowRight size={18} />
-            </a>
-          </div>
+          <Pagination />
         </div>
       </div>
     </section>

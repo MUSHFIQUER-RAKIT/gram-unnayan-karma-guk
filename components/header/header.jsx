@@ -46,7 +46,7 @@ export default function Header({ navBar }) {
       } `}
     >
       <div className=" bg-primary-700 text-white  ">
-        <div className="flex justify-between max-w-7xl mx-auto p-2  text-sm ">
+        <div className="flex justify-between max-w-7xl mx-auto p-1  text-sm ">
           <ul className="flex gap-2">
             <li className="flex gap-2">
               <Mail size={18} />

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import Marquee from "../common/Marquee";
 import DonationStats from "./DonationStats";
 
 export default function HeroSection() {
@@ -11,6 +12,7 @@ export default function HeroSection() {
                  before:content-[''] before:absolute before:inset-0 
                  before:bg-white/90 "
     >
+      <Marquee />
       <div className="max-w-7xl  flex flex-col md:flex-row ">
         <div className="relative z-10 flex flex-col gap-7 ms-4">
           <ul className="flex ms-7 md:ms-0">

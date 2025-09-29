@@ -92,6 +92,10 @@
       ]
     },
     {
+      "name": "Financial",
+      "href": "/financial"
+    },
+    {
       "name": "Donate",
       "href": "/donate"
     }
@@ -287,6 +291,61 @@
         "title": "Extension of Native Chicken and Market Development Value Chain Development Project",
         "imgUrl": "/Tree-Plantation-Program-2025-1.jpg",
         "download": "#"
+      }
+    ]
+  },
+  "financial": {
+    "heading": {
+      "title": "NGO Financial Services",
+      "bigTitle": "Gram Unnayan Karma",
+      "description": "GUK's microfinance programs provide inclusive financing, especially to **disadvantaged women**, for sustainable socio-economic growth and enterprise development in line with Micro-credit Regulatory Authority (MRA) rules."
+    },
+    "card": {
+      "title": "Apply for a GUK Loan",
+      "description": "Start your journey with GUK by applying for a loan today. Simple, fast, and designed to meet your needs.",
+      "btn": "Apply Now"
+    },
+    "loans": [
+      {
+        "title": "Basic Loan",
+        "description": "A simple and flexible loan option designed to cover your essential financial needs with easy repayment terms.",
+        "benefits": [
+          "Low interest rates",
+          "Quick approval",
+          "Flexible repayment"
+        ]
+      },
+      {
+        "title": "Business Loan",
+        "description": "Empower your business with financing tailored to entrepreneurs and companies aiming to grow and expand.",
+        "benefits": [
+          "High loan amounts",
+          "Business-focused support",
+          "Fast processing"
+        ]
+      },
+      {
+        "title": "Education Loan",
+        "description": "Invest in your future with loans designed to cover tuition fees, books, and living expenses for students.",
+        "benefits": [
+          "Student-friendly repayment",
+          "Affordable interest",
+          "Covers global education"
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What documents are required to apply for a loan?",
+        "a": "You will typically need proof of identity, proof of income, and address verification."
+      },
+      {
+        "q": "How long does loan approval take?",
+        "a": "Approval usually takes between 24 to 48 hours, depending on the type of loan."
+      },
+      {
+        "q": "Can I repay my loan early?",
+        "a": "Yes, you can repay your loan early without any hidden charges in most cases."
       }
     ]
   }

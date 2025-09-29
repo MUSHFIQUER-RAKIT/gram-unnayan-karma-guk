@@ -35,16 +35,6 @@ export default function DonationForm() {
         `Pelase Confirm Details! \n Amount:${amount} \n Full Name:${fullName} \n Number:${phone}`
       )
     ) {
-      console.log({
-        fullName,
-        email,
-        amount,
-        phone,
-        address,
-        country: selectedCountry.name,
-        currency: selectedCountry.currency,
-      });
-
       router.push(`/${locales}/donate/paynow`);
     } else {
       console.log("Cancel");
