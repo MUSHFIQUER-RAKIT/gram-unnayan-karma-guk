@@ -348,5 +348,15 @@
         "a": "Yes, you can repay your loan early without any hidden charges in most cases."
       }
     ]
+  },
+  "marquee": {
+    "News": {
+      "heading": "News Update",
+      "description": "Circular for Endline survey under Rural Microenterprise Transformation Project (RMTP) of GUK"
+    },
+    "Reports": {
+      "heading": "Reports Update",
+      "description": "GUK Invites Entrepreneurs for Setting Up a Poultry Diagnostic Lab in Bogura"
+    }
   }
 }

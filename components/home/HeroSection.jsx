@@ -1,9 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
+import Counter from "../common/Counter";
 import Marquee from "../common/Marquee";
 import DonationStats from "./DonationStats";
 
-export default function HeroSection() {
+export default function HeroSection({ marquee }) {
   return (
     <section
       id="Hero"
@@ -12,7 +13,7 @@ export default function HeroSection() {
                  before:content-[''] before:absolute before:inset-0 
                  before:bg-white/90 "
     >
-      <Marquee />
+      <Marquee marquee={marquee} />
       <div className="max-w-7xl  flex flex-col md:flex-row ">
         <div className="relative z-10 flex flex-col gap-7 ms-4">
           <ul className="flex ms-7 md:ms-0">
@@ -26,36 +27,28 @@ export default function HeroSection() {
               <div className="font-semibold text-sm md:text-md">
                 NUMBER OF OFFICES
               </div>
-              <div className="font-semibold text-xs md:text-3xl tracking-tight">
-                495
-              </div>
+              <Counter targetNumber="495" />
             </div>
 
             <div className="flex flex-col gap-2 h-20 md:h-28 text-white rounded-xl shadow-md p-6 max-w-[240px] bg-gray-800/30   backdrop-blur-lg">
               <div className="font-semibold text-sm md:text-md">
                 DISTRICT COVERED
               </div>
-              <div className="font-semibold text-xs md:text-3xl tracking-tight">
-                56
-              </div>
+              <Counter targetNumber="56" />
             </div>
 
             <div className="flex flex-col gap-2 h-20 md:h-28 text-white rounded-xl shadow-md p-6 max-w-[240px] bg-primary-700  ">
               <div className="font-semibold text-sm md:text-md">
                 THOUSAND MEMBERS
               </div>
-              <div className="font-semibold text-xs md:text-3xl tracking-tight">
-                610
-              </div>
+              <Counter targetNumber="610" />
             </div>
 
             <div className="flex flex-col gap-2 h-24 md:h-32 text-white rounded-xl shadow-md p-4 max-w-[180px] md:max-w-[240px] bg-gray-800/30   backdrop-blur-lg">
               <div className="font-semibold text-sm md:text-md">
                 CRORE TAKA LOAN DISBURSEMENT
               </div>
-              <div className="font-semibold text-xs md:text-3xl tracking-tight">
-                23000
-              </div>
+              <Counter targetNumber="23000" />
             </div>
 
             <DonationStats />
